@@ -1,0 +1,30 @@
+/**** Variable ****/
+$themeColor1: green;
+$themeColor2: blue;
+$themeColor3: yellow;
+$foodWidth: 400px;
+
+
+/**** Selector ****/
+h1 {
+    color: $themeColor1;
+}
+
+div {
+
+    .sub-heading {
+        color: $themeColor3;
+    }
+
+    h1 {
+      color: $themeColor2;
+    }
+}
+
+p {
+    color: red;
+}
+
+.food-item {
+    width: $foodWidth;
+}

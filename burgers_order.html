@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Bear Burger's - Order</title>
+  </head>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid grey;
+    }
+
+    .top-heading {
+      background-color: rgb(255, 200, 99);
+    }
+
+    .sub-heading {
+      background-color: rgb(255, 229, 182);
+    }
+
+    #sub-heading {
+      background-color: rgb(255, 229, 182);
+    }
+
+    .food-icon {
+      height: 30px;
+    }
+
+    .food-row:hover {
+      background-color: orange;
+    }
+  </style>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: rgb(255, 229, 182)"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="image/restaurant_logo.png"
+            class="d-inline-block align-top"
+            width="30"
+            height="30"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Order</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Shop</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5 mb-5">
+      <h1 class="display-1">Order Here!</h1>
+      <div class="row">
+        <div class="col-lg-8">
+          <table class="table table-border">
+            <tr class="top-heading">
+              <th>Icon</th>
+              <th>Product Item</th>
+              <th>Price</th>
+            </tr>
+            <tr class="sub-heading">
+              <th class="text-center" colspan="3">Meals</th>
+            </tr>
+            <tr class="food-row">
+              <td><img src="image/burger.png" class="food-icon" /></td>
+              <td>Burger</td>
+              <td>₱55.00</td>
+            </tr>
+            <tr class="food-row">
+              <td><img src="image/fried-chicken.png" class="food-icon" /></td>
+              <td>Fried Chicken</td>
+              <td>₱55.00</td>
+            </tr>
+            <tr class="food-row">
+              <td><img src="image/spaghetti.png" class="food-icon" /></td>
+              <td>Spaghetti</td>
+              <td>₱55.00</td>
+            </tr>
+            <tr class="food-row">
+              <td><img src="image/pizza.png" class="food-icon" /></td>
+              <td>Pizza</td>
+              <td>₱150.00</td>
+            </tr>
+            <tr class="sub-heading">
+              <th class="text-center sub-heading" colspan="3">Drinks</th>
+            </tr>
+            <tr class="food-row">
+              <td><img src="image/coke.png" class="food-icon" /></td>
+              <td>Coke</td>
+              <td>₱20.00</td>
+            </tr>
+            <tr class="food-row">
+              <td><img src="image/sprite.png" class="food-icon" /></td>
+              <td>Sprite</td>
+              <td>₱20.00</td>
+            </tr>
+            <tr class="food-row">
+              <td><img src="image/sarsi.png" class="food-icon" /></td>
+              <td>Sarsi</td>
+              <td>₱20.00</td>
+            </tr>
+            <tr>
+              <td colspan="2" rowspan="2" id="sub-heading">
+                All items are subject to tax. No refunds. All items are not
+                transferrable
+              </td>
+              <td class="food-row">Extra Rice - ₱20.00</td>
+            </tr>
+            <tr>
+              <td class="food-row">Condiments - ₱20.00</td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-lg-4">
+          <img src="image/basil-sauce.png" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+
+    <div style="color: white; background-color: black">
+      <div class="container pt-5">
+        <h1>Tell Us What You Think!</h1>
+        <div class="row">
+          <div class="col-lg-6">
+            <img
+              src="https://thumbs.dreamstime.com/b/cucumber-burger-ingredients-floating-black-background-isolated-vertical-cucumber-burger-ingredients-floating-bun-cheese-tomato-177814997.jpg"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-6">
+            <form>
+              <div class="form-group">
+                <label>Name (optional):</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label>Province (optional):</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="form-group mt-3">
+                <label>How many times have you went to our restaurant?</label
+                ><br />
+                <input
+                  type="radio"
+                  name="times-visited"
+                  value="This is the first time!"
+                />This is the first time! <br />
+                <input
+                  type="radio"
+                  name="times-visited"
+                  value="Second time"
+                />Second time<br />
+                <input
+                  type="radio"
+                  name="times-visited"
+                  value="Third time or more"
+                />Third time or more<br />
+              </div>
+              <div class="form-group mt-3">
+                <label
+                  >How would you rate the food (use the star emoji ⭐)</label
+                ><br />
+                <input type="radio" name="food-rating" value="1-star" />⭐
+                <input type="radio" name="food-rating" value="2-star" />⭐⭐
+                <input type="radio" name="food-rating" value="3-star" />⭐⭐⭐
+                <input type="radio" name="food-rating" value="4-star" />⭐⭐⭐⭐
+                <input
+                  type="radio"
+                  name="food-rating"
+                  value="5-star"
+                />⭐⭐⭐⭐⭐
+              </div>
+
+              <div class="form-group mt-3">
+                <label>How would you rate the services</label><br />
+                <input type="radio" name="service-rating" value="1-star" />⭐
+                <input type="radio" name="service-rating" value="2-star" />⭐⭐
+                <input
+                  type="radio"
+                  name="service-rating"
+                  value="3-star"
+                />⭐⭐⭐
+                <input
+                  type="radio"
+                  name="service-rating"
+                  value="4-star"
+                />⭐⭐⭐⭐
+                <input
+                  type="radio"
+                  name="service-rating"
+                  value="5-star"
+                />⭐⭐⭐⭐⭐
+              </div>
+              <div>
+                <button type="Submit" class="btn btn-primary mt-3">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="pb-3 text-center" id="bottom-items">
+        <div class="row">
+          <div class="col-lg-12 fw-bold contact-me">
+            benhur.uy21@gmail.com | 09354319465
+          </div>
+        </div>
+      </div>
+      <div class="row bottom-icon">
+        <div class="d-flex justify-content-evenly px-5 pt-3 pb-3 icon-links">
+          <a
+            href="https://www.facebook.com/"
+            alt="facebook site"
+            target="_blank"
+            ><img src="image/facebook.png" style="width: 25px" />
+          </a>
+
+          <a href="https://twitter.com/" alt="twitter site" target="_blank">
+            <img src="image/twitter.png" style="width: 25px" />
+          </a>
+          <a
+            href="https://www.instagram.com/"
+            alt="instragram site"
+            target="_blank"
+          >
+            <img src="image/instagram.png" style="width: 25px" />
+          </a>
+          <a
+            href="https://www.pinterest.ph/"
+            alt="pinterest site"
+            target="_blank"
+          >
+            <img src="image/pinterest.png" style="width: 25px" />
+          </a>
+          <a
+            href="https://www.linkedin.com/"
+            alt="linkedIn site"
+            target="_blank"
+          >
+            <img src="image/linkedin.png" style="width: 25px" alt="" />
+          </a>
+          <a href="https://www.youtube.com/" alt="youtube site" target="_blank"
+            ><img src="image/youtube.png" style="width: 35px"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
